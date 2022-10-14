@@ -1605,7 +1605,7 @@ p{
 /************* NEWSLETTER-1 *************/
 
 #newsletter-1{
-	background:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/newsletter.jpg') 50% 78%;
+	background:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url(https://cafebatdongsan.com.vn/uploads/image/images/furama-ariyana-condotel-da-nang.jpg) 50% 78%;
 	background-size:140%;
 	color:white;
 }
@@ -1798,7 +1798,7 @@ p{
 /********** COVER FLIGHT PAGES **********/
 
 #cover-flight-grid-list{
-	background:url('../images/cover-flight-grid-list.jpg') 50% 40%;
+	background:url(https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Resort_Exterior_Courtyard-Night.jpg) 50% 40%;
 	background-size:140%;
 	color:white;
 }
@@ -1888,7 +1888,7 @@ p{
 /******* COVER REGISTRATION PAGE ********/
 
 #cover-registration{
-	background:url('../images/cover-registration.jpg') 50% 36%;
+	background:url(http://cdn.reatimes.vn/mediav2/media_old/upload/ol4YvtHypO2k1VgfHNXKTQ/files/thong-tin-tien-do-va-gia-ca-du-an-biet-thu-furama-resort-spa-lalyana-senses-world-phu-quoc-6.jpg) 50% 36%;
 	background-size:145%;
 }
 

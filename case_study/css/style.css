@@ -3180,12 +3180,12 @@ h1,h2,h3,h4,h5,h6,.main-title a, .flight-info h3 .flight-destination,.blog-post-
 /*********** FLIGHT-GRID BLOCK **********/
 
 .f-img{
-	padding:26px 26px;
+	padding:15px 15px;
 	text-align:center;
 }
 
 .f-img img{
-	max-width:180px;
+	/*max-width:180px;*/
 	display:inline-block;	
 }
 

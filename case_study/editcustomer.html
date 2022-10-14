@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Chỉnh sửa khách hàng</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="https://furamavietnam.com/wp-content/uploads/2018/07/favicon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CMerriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" id="cpswitch" href="css/orange.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    
+    
+    <body>
+    <div class="loader"></div>
+    <div class="overlay">
+        <a href="javascript:void(0)" id="close-button" class="closebtn">&times;</a>
+        <div class="overlay-content">
+            <div class="form-center">
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search..." required/>
+                            <span class="input-group-btn"><button type="submit" class="btn"><span><i
+                                    class="fa fa-search"></i></span></button></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="top-bar" class="tb-text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="info">
+                        <ul class="list-unstyled list-inline">
+                            <li><span><i class="fa fa-map-marker"></i></span>103 – 105 Đường Võ Nguyên Giáp, Quận Ngũ
+                                hành
+                                Sơn, Đà Nẵng, Việt Nam
+                            </li>
+                            <li><span><i class="fa fa-phone"></i></span>84-236-3847 333/888</li>
+                        </ul>
+                    </div><!-- end info -->
+                </div><!-- end columns -->
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="links">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="#"><span><i class="fa fa-lock"></i></span>Đăng nhập</a></li>
+                            <li><a href="#"><span><i class="fa fa-plus"></i></span>Đăng ký</a></li>
+                            <li>
+                                <form>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <div class="form-group currency">
+                                                <span><i class="fa fa-angle-down"></i></span>
+                                                <select class="form-control">
+                                                    <option value="">$</option>
+                                                    <option value="">£</option>
+                                                </select>
+                                            </div><!-- end form-group -->
+                                        </li>
+
+                                        <li>
+                                            <div class="form-group language">
+                                                <span><i class="fa fa-angle-down"></i></span>
+                                                <select class="form-control">
+                                                    <option value="">VIE</option>
+                                                    <option value="">EN</option>
+                                                    <option value="">UR</option>
+                                                    <option value="">FR</option>
+                                                    <option value="">IT</option>
+                                                </select>
+                                            </div><!-- end form-group -->
+                                        </li>
+                                    </ul>
+                                </form>
+                            </li>
+                        </ul>
+                    </div><!-- end links -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end top-bar -->
+
+    <nav class="navbar navbar-default main-navbar navbar-custom navbar-white" id="mynavbar-1">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="menu-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="header-search hidden-lg">
+                    <a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
+                </div>
+                <a style="transform: translateY(10px)" href="#" class="navbar-brand"><span><img
+                        style="width: 30px; transform: translateY(-5px)"
+                        src="https://furamavietnam.com/wp-content/uploads/2018/07/favicon.png">FURAMA</span></a>
+            </div><!-- end navbar-header -->
+
+            <div class="collapse navbar-collapse" id="myNavbar1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.html">Trang chủ</a></li>
+                    <li>
+                        <a href="listcustomer.html">Khách
+                            hàng</a></li>
+                    <li><a href="listfacility.html">Dịch vụ</a></li>
+                    <li><a href="listcontract.html">Hợp đồng</a></li>
+                    <li><a href="viewmore.html">Xem thêm</a></li>
+                    <li><a href="javascript:void(0)" class="search-button"><span><i
+                            class="fa fa-search"></i></span></a>
+                    </li>
+                </ul>
+            </div><!-- end navbar collapse -->
+        </div><!-- end container -->
+    </nav><!-- end navbar -->
+        
+        
+        <!--================ PAGE-COVER =================-->
+        <section class="page-cover" id="cover-registration">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                    	<h1 class="page-title">Cập nhập thông tin khách hàng tháng 10/2022</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="home.html">Trang chủ</a></li>
+                            <li class="active">Danh sách khách hàng</li>
+                            <li class="active">Chỉnh sửa khách hàng</li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end page-cover -->
+        
+        
+        <!--===== INNERPAGE-WRAPPER ====-->
+        <section class="innerpage-wrapper">
+        	<div id="registration" class="innerpage-section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                        
+                        	<div class="flex-content">
+                                <div class="custom-form custom-form-fields">
+                                    <h3>Cập nhập thông tin</h3>
+                                    <p>Vui lòng nhập đầy đủ thông tin phía dưới</p>
+                                    <form>
+                                            
+                                        <div class="form-group">
+                                             <input type="text" class="form-control" placeholder="Họ tên khách hàng"  required/>
+                                             <span><i class="fa fa-user"></i></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" placeholder="Ngày sinh"  required/>
+                                            <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Số CMND/CCCD"  required/>
+                                            <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Số điện thoại"  required/>
+                                            <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                             <input type="email" class="form-control" placeholder="Email"  required/>
+                                             <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Loại khách ( Diamond, Member, Silver, ... )"  required/>
+                                            <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Địa chỉ"  required/>
+                                            <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+                                        
+                                        <button class="btn btn-orange btn-block">Lưu thay đổi</button>
+                                    </form>
+                                </div><!-- end custom-form -->
+                                
+                                <div class="flex-content-img custom-form-img">
+                                    <img src="https://danangfantasticity.com/wp-content/uploads/2018/09/giai-thuong-jalpak-nhat-ban-ghi-nhan-furama-resort-danang-la-khach-san-duoc-yeu-thich-nhat-2017.jpg" class="img-responsive" alt="registration-img" />
+                                </div><!-- end custom-form-img -->
+                            </div><!-- end form-content -->
+                            
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->         
+            </div><!-- end registration -->
+        </section><!-- end innerpage-wrapper -->
+        
+        
+        <!--======================= BEST FEATURES =====================-->
+    <section id="best-features" class="banner-padding black-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="b-feature-block">
+                        <span><i class="fa fa-dollar"></i></span>
+                        <h3>Đảm bảo giá tốt nhất</h3>
+                        <p>Chúng tôi sẽ đảm bảo bạn nhận được căn phòng ở mức giá thấp nhất có sẵn bất cứ nơi nào trực
+                            tuyến</p>
+                    </div><!-- end b-feature-block -->
+                </div><!-- end columns -->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="b-feature-block">
+                        <span><i class="fa fa-lock"></i></span>
+                        <h3>An toàn và Bảo mật</h3>
+                        <p>Chúng tôi bảo vệ sự riêng tư, an toàn và bảo mật cho thông tin cá nhân của bạn.</p>
+                    </div><!-- end b-feature-block -->
+                </div><!-- end columns -->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="b-feature-block">
+                        <span><i class="fa fa-thumbs-up"></i></span>
+                        <h3>Đại lý du lịch</h3>
+                        <p> Với phương châm đặt lợi ích của khách hàng lên hàng đầu, Furama resort Da Nang mang đến
+                            những
+                            dịch vụ tốt nhất cho các bạn</p>
+                    </div><!-- end b-feature-block -->
+                </div><!-- end columns -->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="b-feature-block">
+                        <span><i class="fa fa-bars"></i></span>
+                        <h3>Hướng dẫn du lịch</h3>
+                        <p>Cung cấp những tiện nghi tốt nhất cho khách du lịch của chúng tôi và chăm sóc họ chu đáo.
+                            Chúng
+                            tôi giúp họ hiểu biết về di sản và văn hóa quốc gia của chúng ta.</p>
+                    </div><!-- end b-feature-block -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end best-features -->
+
+
+    <!--========================= NEWSLETTER-1 ==========================-->
+    <section id="newsletter-1" class="section-padding back-size newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2>ĐĂNG KÝ THÔNG TIN CỦA CHÚNG TÔI</h2>
+                    <p>ĐĂNG KÝ ĐỂ NHẬN CÁC CẬP NHẬT QUAN TÂM CỦA CHÚNG TÔI</p>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control input-lg" placeholder="Nhập email của bạn."
+                                       required/>
+                                <span class="input-group-btn"><button class="btn btn-lg"><i
+                                        class="fa fa-envelope"></i></button></span>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end newsletter-1 -->
+
+
+    <!--======================= FOOTER =======================-->
+    <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+
+        <div id="footer-top" class="banner-padding ftr-top-black ftr-text-white">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-contact">
+                        <h3 class="footer-heading">LIÊN HỆ</h3>
+                        <ul class="list-unstyled">
+                            <li><span><i class="fa fa-map-marker"></i></span>103 – 105 Đường Võ Nguyên Giáp</li>
+                            <li><span><i class="fa fa-phone"></i></span>84-236-3847 333/888</li>
+                            <li><span><i class="fa fa-envelope"></i></span>reservation@furamavietnam.com</li>
+                        </ul>
+                    </div><!-- end columns -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 footer-widget ftr-links">
+                        <h3 class="footer-heading">ĐỊA ĐIỂM</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Cố đô Huế</a></li>
+                            <li><a href="#">Phố cổ Hội An</a></li>
+                            <li><a href="#">Thánh địa Mỹ Sơn</a></li>
+                            <li><a href="#">Động Phong Nha</a></li>
+                        </ul>
+                    </div><!-- end columns -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-links ftr-pad-left">
+                        <h3 class="footer-heading">TÀI NGUYÊN</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div><!-- end columns -->
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-about">
+                        <h3 class="footer-heading">VỀ CHÚNG TÔI</h3>
+                        <p>Cảm ơn sự quan tâm và thời gian quý báu của quý khách – chúng tôi sẽ đánh giá cao sự đóng góp
+                            của
+                            quý khách trong việc tiếp tục công nhận Cung Hội nghị Quốc tế Ariyana trên phạm vi quốc tế.
+                            Về
+                            phần mình, chúng tôi sẽ tiếp tục cố gắng hết mình phục vụ để mang đến trải nghiệm khách hàng
+                            tốt
+                            nhất có thể.</p>
+                        <ul class="social-links list-inline list-unstyled">
+                            <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-linkedin"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end container -->
+            </div><!-- end footer-top -->
+
+            <div id="footer-bottom" class="ftr-bot-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                            <p>© 2018 Furama Resort Danang</p>
+                        </div><!-- end columns -->
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                            <ul class="list-unstyled list-inline">
+                                <li><a href="#">Điều khoản sử dụng</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Make By NTT</a></li>
+                            </ul>
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-bottom -->
+        </div>
+    </section><!-- end footer -->
+
+
+
+    <!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <!-- Page Scripts Ends -->
+    </body>
+</html>
