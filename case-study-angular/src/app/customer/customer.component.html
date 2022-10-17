@@ -1,0 +1,591 @@
+<!--========================= PAGE-COVER ======================-->
+<section class="page-cover back-size" id="cover-flight-grid-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="page-title">Danh sách các khách hàng vip tháng 10/2022</h1>
+        <ul class="breadcrumb">
+          <li><a href="home.html">Trang chủ</a></li>
+          <li class="active">Danh sách khách hàng</li>
+        </ul>
+      </div><!-- end columns -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section><!-- end page-cover -->
+
+
+<!--===== INNERPAGE-WRAPPER ====-->
+<section class="innerpage-wrapper">
+  <div id="flight-grid" class="innerpage-section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3 side-bar left-side-bar">
+
+          <div class="side-bar-block filter-block">
+            <h3>Thêm mới</h3>
+            <p>Thêm mới khách hàng tại đây !</p>
+            <a href="createcustomer.html" class="btn btn-orange btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                   class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+              </svg>
+            </a>
+          </div><!-- end side-bar-block -->
+
+          <div class="side-bar-block filter-block">
+            <h3>Sắp xếp bộ lọc</h3>
+            <p>Tìm khách hàng của bạn ngay hôm nay</p>
+
+            <div class="panels-group">
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a href="#panel-1" data-toggle="collapse">Loại khách<span><i
+                    class="fa fa-angle-down"></i></span></a>
+                </div><!-- end panel-heading -->
+
+                <div id="panel-1" class="panel-collapse collapse">
+                  <div class="panel-body text-left">
+                    <ul class="list-unstyled">
+                      <li class="custom-check"><input type="checkbox" id="check01"
+                                                      name="checkbox"/>
+                        <label for="check01"><span><i class="fa fa-check"></i></span>Tất
+                          cả</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check02"
+                                                      name="checkbox"/>
+                        <label for="check02"><span><i
+                          class="fa fa-check"></i></span>Diamond</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check03"
+                                                      name="checkbox"/>
+                        <label for="check03"><span><i
+                          class="fa fa-check"></i></span>Platinum</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check04"
+                                                      name="checkbox"/>
+                        <label for="check04"><span><i
+                          class="fa fa-check"></i></span>Gold</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check05"
+                                                      name="checkbox"/>
+                        <label for="check05"><span><i
+                          class="fa fa-check"></i></span>Silver</label>
+                      </li>
+                      <li class="custom-check"><input type="checkbox" id="check06"
+                                                      name="checkbox"/>
+                        <label for="check06"><span><i
+                          class="fa fa-check"></i></span>Member</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check07"
+                                                      name="checkbox"/>
+                    </ul>
+                  </div><!-- end panel-body -->
+                </div><!-- end panel-collapse -->
+              </div><!-- end panel-default -->
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a href="#panel-2" data-toggle="collapse">Địa chỉ<span><i
+                    class="fa fa-angle-down"></i></span></a>
+                </div><!-- end panel-heading -->
+
+                <div id="panel-2" class="panel-collapse collapse">
+                  <div class="panel-body text-left">
+                    <ul class="list-unstyled">
+                      <li class="custom-check"><input type="checkbox" id="check10"
+                                                      name="checkbox"/>
+                        <label for="check10"><span><i class="fa fa-check"></i></span>Tất
+                          cả</label>
+                      </li>
+                      <li class="custom-check"><input type="checkbox" id="check11"
+                                                      name="checkbox"/>
+                        <label for="check11"><span><i
+                          class="fa fa-check"></i></span>Đà Nẵng</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check12"
+                                                      name="checkbox"/>
+                        <label for="check12"><span><i class="fa fa-check"></i></span>Quảng
+                          Nam</label>
+                      </li>
+                      <li class="custom-check"><input type="checkbox" id="check13"
+                                                      name="checkbox"/>
+                        <label for="check13"><span><i
+                          class="fa fa-check"></i></span>Huế</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check9"
+                                                      name="checkbox"/>
+                        <label for="check13"><span><i
+                          class="fa fa-check"></i></span>Quảng Ngãi</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check7"
+                                                      name="checkbox"/>
+                        <label for="check13"><span><i
+                          class="fa fa-check"></i></span>Hà Nội</label></li>
+                      <li class="custom-check"><input type="checkbox" id="check8"
+                                                      name="checkbox"/>
+                        <label for="check13"><span><i
+                          class="fa fa-check"></i></span>TP.Hồ Chí Minh</label></li>
+                    </ul>
+                  </div><!-- end panel-body -->
+                </div><!-- end panel-collapse -->
+              </div><!-- end panel-default -->
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Tên khách hàng" required/>
+              </div>
+
+            </div><!-- end panel-group -->
+          </div><!-- end side-bar-block -->
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <div class="side-bar-block main-block ad-block">
+                <div class="main-img ad-img">
+                  <a href="#">
+                    <img src="images/car-ad.jpg" class="img-responsive" alt="car-ad"/>
+                    <div class="ad-mask">
+                      <div class="ad-text">
+                        <span>Luxury</span>
+                        <h2>Car</h2>
+                        <span>Offer</span>
+                      </div><!-- end ad-text -->
+                    </div><!-- end columns -->
+                  </a>
+                </div><!-- end ad-img -->
+              </div><!-- end side-bar-block -->
+            </div><!-- end columns -->
+
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <div class="side-bar-block support-block">
+                <h3>Cần giúp đỡ</h3>
+                <p>Cho tôi biết nếu anh/chị cần giúp đỡ nhé! Xin vui lòng gọi vào số :</p>
+                <div class="support-contact">
+                  <span><i class="fa fa-phone"></i></span>
+                  <p>+84 388 410 323</p>
+                </div><!-- end support-contact -->
+              </div><!-- end side-bar-block -->
+            </div><!-- end columns -->
+
+          </div><!-- end row -->
+        </div><!-- end columns -->
+
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 content-side">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="grid-block main-block f-grid-block">
+                <a href="#">
+                  <div class="main-img f-img">
+                    <img src="https://andy.codegym.vn/storage/images/avatars/701964623b31d1a5f4d07079c5d67e4a.jpeg"
+                         class="img-responsive" alt="flight-img"/>
+                  </div><!-- end f-img -->
+                </a>
+                <ul class="list-unstyled list-inline offer-price-1">
+                  <li class="price">Diamond<span class="divider">|</span><span
+                    class="pkg">C0522G1</span></li>
+                </ul>
+
+                <div class="block-info f-grid-info">
+                  <div class="f-grid-desc">
+                                        <span class="f-grid-time"><i
+                                          class="fa fa-clock-o"></i>100 Giờ</span>
+                    <h3 class="block-title"><a href="#">Hà Bảo Ân</a></h3>
+                    <span class="block-minor">Ngày sinh: 01-01-1995</span><br>
+                    <span class="block-minor">Giới tính: Nữ</span><br>
+                    <span class="block-minor">SĐT: 0XXXXXXXX</span><br>
+                    <span class="block-minor">Email: anhb@codegym.com</span><br>
+                    <!--                                        <span class="block-minor">Địa chỉ: Đà Nẵng</span><br>-->
+                    <p>Slogan: Anh sẽ biến cái phần mềm đó thành phần cứng vì em.</p>
+                  </div><!-- end f-grid-desc -->
+
+
+                  <div class="grid-btn">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="editcustomer.html"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <a href="#"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-person-bounding-box"
+                               viewBox="0 0 16 16">
+                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div><!-- end grid-btn -->
+                </div><!-- end f-grid-info -->
+              </div><!-- end f-grid-block -->
+            </div><!-- end columns -->
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="grid-block main-block f-grid-block">
+                <a href="#">
+                  <div class="main-img f-img">
+                    <img style=""
+                         src="https://andy.codegym.vn/storage/images/avatars/e3564fafb5098fee1f4de7f534895abe.jpeg"
+                         class="img-responsive" alt="flight-img"/>
+                  </div><!-- end f-img -->
+                </a>
+                <ul class="list-unstyled list-inline offer-price-1">
+                  <li class="price">Platinium,<span class="divider">|</span><span
+                    class="pkg">C0522G1</span></li>
+                </ul>
+
+                <div class="block-info f-grid-info">
+                  <div class="f-grid-desc">
+                                        <span class="f-grid-time"><i
+                                          class="fa fa-clock-o"></i>100 giờ</span>
+                    <h3 class="block-title"><a href="#">Bùi Hùng</a></h3>
+                    <span class="block-minor">Ngày sinh: 01-01-1995</span><br>
+                    <span class="block-minor">Giới tính: Nữ</span><br>
+                    <!--                                        <span class="block-minor">SĐT: 0XXXXXXXX</span><br>-->
+                    <!--                                        <span class="block-minor">Email: hungb@codegym.com</span><br>-->
+                    <!--                                        <span class="block-minor">Địa chỉ: Đà Nẵng</span><br>-->
+                    <p>Slogan: Khi bạn chết, bạn không nhận thức được điều đó mà chỉ có những người
+                      xung quanh bạn biết. Khi bạn code ngu cũng vậy. </p>
+                  </div><!-- end f-grid-desc -->
+
+                  <div class="grid-btn">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="editcustomer.html"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <a href="#"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-person-bounding-box"
+                               viewBox="0 0 16 16">
+                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div><!-- end grid-btn -->
+                </div><!-- end f-grid-info -->
+              </div><!-- end f-grid-block -->
+            </div><!-- end columns -->
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="grid-block main-block f-grid-block">
+                <a href="#">
+                  <div class="main-img f-img">
+                    <img src="https://andy.codegym.vn/storage/images/avatars/ae23548049f8654635bcdb639653445c.jpeg"
+                         class="img-responsive" alt="flight-img"/>
+                  </div><!-- end f-img -->
+                </a>
+                <ul class="list-unstyled list-inline offer-price-1">
+                  <li class="price">Gold<span class="divider">|</span><span
+                    class="pkg">C0522G1</span></li>
+                </ul>
+
+                <div class="block-info f-grid-info">
+                  <div class="f-grid-desc">
+                                        <span class="f-grid-time"><i
+                                          class="fa fa-clock-o"></i>100 Giờ</span>
+                    <h3 class="block-title"><a href="#">Nguyễn Văn Phúc</a></h3>
+                    <span class="block-minor">Ngày sinh: 01-01-1995</span><br>
+                    <span class="block-minor">Giới tính: Nữ</span><br>
+                    <!--                                        <span class="block-minor">SĐT: 0XXXXXXXX</span><br>-->
+                    <span class="block-minor">Email: hungb@codegym.com</span><br>
+                    <!--                                        <span class="block-minor">Địa chỉ: Đà Nẵng</span><br>-->
+                    <p>Slogan: Không phải tôi không muốn giao lưu, chỉ vì giao diện của tôi thực sự
+                      chưa được thân thiện.</p>
+                  </div><!-- end f-grid-desc -->
+
+
+                  <div class="grid-btn">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="editcustomer.html"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <a href="#"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-person-bounding-box"
+                               viewBox="0 0 16 16">
+                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div><!-- end grid-btn -->
+                </div><!-- end f-grid-info -->
+              </div><!-- end f-grid-block -->
+            </div><!-- end columns -->
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="grid-block main-block f-grid-block">
+                <a href="#">
+                  <div class="main-img f-img">
+                    <img src="https://andy.codegym.vn/storage/images/avatars/38cba5c3296a2935a26f2dc896be48e2.jpeg"
+                         class="img-responsive" alt="flight-img"/>
+                  </div><!-- end f-img -->
+                </a>
+                <ul class="list-unstyled list-inline offer-price-1">
+                  <li class="price">Silver<span class="divider">|</span><span
+                    class="pkg">C0522G1</span></li>
+                </ul>
+
+                <div class="block-info f-grid-info">
+                  <div class="f-grid-desc">
+                                        <span class="f-grid-time"><i
+                                          class="fa fa-clock-o"></i>100 giờ</span>
+                    <h3 class="block-title"><a href="#">Đặng Thị Thủy Tiên</a></h3>
+                    <span class="block-minor">Ngày sinh: 01-01-1995</span><br>
+                    <span class="block-minor">Giới tính: Nam</span><br>
+                    <!--                                        <span class="block-minor">SĐT: 0XXXXXXXX</span><br>-->
+                    <span class="block-minor">Email: tiendtt@codegym.com</span><br>
+                    <!--                                        <span class="block-minor">Địa chỉ: Đà Nẵng</span><br>-->
+                    <p>Slogan: Nếu 1 cốc coffee vào buối sáng chưa đủ giúp bạn tỉnh táo... Hãy thử
+                      xóa 1 table trong Database để hiệu quả hơn.</p>
+                  </div><!-- end f-grid-desc -->
+
+                  <div class="grid-btn">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="editcustomer.html"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <a href="#"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-person-bounding-box"
+                               viewBox="0 0 16 16">
+                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div><!-- end grid-btn -->
+                </div><!-- end f-grid-info -->
+              </div><!-- end f-grid-block -->
+            </div><!-- end columns -->
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="grid-block main-block f-grid-block">
+                <a href="#">
+                  <div class="main-img f-img">
+                    <img src="https://andy.codegym.vn/storage/images/avatars/ed8e5cd27c9b6e42aff7348d37df70ca.jpeg"
+                         class="img-responsive" alt="flight-img"/>
+                  </div><!-- end f-img -->
+                </a>
+                <ul class="list-unstyled list-inline offer-price-1">
+                  <li class="price">Member<span class="divider">|</span><span
+                    class="pkg">C0522G1</span></li>
+                </ul>
+
+                <div class="block-info f-grid-info">
+                  <div class="f-grid-desc">
+                                        <span class="f-grid-time"><i
+                                          class="fa fa-clock-o"></i>100 giờ</span>
+                    <h3 class="block-title"><a href="#">Phạm Đạt</a></h3>
+                    <span class="block-minor">Ngày sinh: 01-01-1995</span><br>
+                    <span class="block-minor">Giới tính: Nữ</span><br>
+                    <!--                                        <span class="block-minor">SĐT: 0XXXXXXXX</span><br>-->
+                    <span class="block-minor">Email: datp@codegym.com</span><br>
+                    <span class="block-minor">Địa chỉ: Đà Nẵng</span><br>
+                    <p>Slogan: Công việc của lập trình viên hằng ngày chỉ là convert cafe sang
+                      source code.</p>
+                  </div><!-- end f-grid-desc -->
+                  <div class="grid-btn">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="editcustomer.html"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <a href="#"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-person-bounding-box"
+                               viewBox="0 0 16 16">
+                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div><!-- end grid-btn -->
+                </div><!-- end f-grid-info -->
+              </div><!-- end f-grid-block -->
+            </div><!-- end columns -->
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="grid-block main-block f-grid-block">
+                <a href="#">
+                  <div class="main-img f-img">
+                    <img src="https://andy.codegym.vn/storage/images/avatars/514fa3360821b021cf8767ce416f508d.jpeg"
+                         class="img-responsive" alt="flight-img"/>
+                  </div><!-- end f-img -->
+                </a>
+                <ul class="list-unstyled list-inline offer-price-1">
+                  <li class="price">Member<span class="divider">|</span><span
+                    class="pkg">C0522G1</span></li>
+                </ul>
+
+                <div class="block-info f-grid-info">
+                  <div class="f-grid-desc">
+                                        <span class="f-grid-time"><i
+                                          class="fa fa-clock-o"></i>100 giờ</span>
+                    <h3 class="block-title"><a href="#">Phan Phước Đại</a></h3>
+                    <span class="block-minor">Ngày sinh: 01-01-1995</span><br>
+                    <span class="block-minor">Giới tính: Nữ</span><br>
+                    <!--                                        <span class="block-minor">SĐT: 0XXXXXXXX</span><br>-->
+                    <span class="block-minor">Email: daipp@codegym.com</span><br>
+                    <!--                                        <span class="block-minor">Địa chỉ: Đà Nẵng</span><br>-->
+                    <p>Slogan: Dân IT chuyện với con gái như là tình trạng "Keyboard not found"
+                      nhưng vẫn muốn "Strike F1 to continue"</p>
+                  </div><!-- end f-grid-desc -->
+
+                  <div class="grid-btn">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="editcustomer.html"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <a href="#"
+                           class="btn btn-orange btn-block btn-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-person-bounding-box"
+                               viewBox="0 0 16 16">
+                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div><!-- end grid-btn -->
+                </div><!-- end f-grid-info -->
+              </div><!-- end f-grid-block -->
+            </div><!-- end columns -->
+
+          </div><!-- end row -->
+
+          <div class="pages">
+            <ol class="pagination">
+              <li><a href="#" aria-label="Previous"><span aria-hidden="true"><i
+                class="fa fa-angle-left"></i></span></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#" aria-label="Next"><span aria-hidden="true"><i class="fa fa-angle-right"></i></span></a>
+              </li>
+            </ol>
+          </div><!-- end pages -->
+        </div><!-- end columns -->
+
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </div><!-- end flight-grid -->
+</section><!-- end innerpage-wrapper -->
+
+
+<section id="best-features" class="banner-padding black-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div class="b-feature-block">
+          <span><i class="fa fa-dollar"></i></span>
+          <h3>Đảm bảo giá tốt nhất</h3>
+          <p>Chúng tôi sẽ đảm bảo bạn nhận được căn phòng ở mức giá thấp nhất có sẵn bất cứ nơi nào trực
+            tuyến</p>
+        </div><!-- end b-feature-block -->
+      </div><!-- end columns -->
+
+      <div class="col-sm-6 col-md-3">
+        <div class="b-feature-block">
+          <span><i class="fa fa-lock"></i></span>
+          <h3>An toàn và Bảo mật</h3>
+          <p>Chúng tôi bảo vệ sự riêng tư, an toàn và bảo mật cho thông tin cá nhân của bạn.</p>
+        </div><!-- end b-feature-block -->
+      </div><!-- end columns -->
+
+      <div class="col-sm-6 col-md-3">
+        <div class="b-feature-block">
+          <span><i class="fa fa-thumbs-up"></i></span>
+          <h3>Đại lý du lịch</h3>
+          <p> Với phương châm đặt lợi ích của khách hàng lên hàng đầu, Furama resort Da Nang mang đến
+            những
+            dịch vụ tốt nhất cho các bạn</p>
+        </div><!-- end b-feature-block -->
+      </div><!-- end columns -->
+
+      <div class="col-sm-6 col-md-3">
+        <div class="b-feature-block">
+          <span><i class="fa fa-bars"></i></span>
+          <h3>Hướng dẫn du lịch</h3>
+          <p>Cung cấp những tiện nghi tốt nhất cho khách du lịch của chúng tôi và chăm sóc họ chu đáo.
+            Chúng
+            tôi giúp họ hiểu biết về di sản và văn hóa quốc gia của chúng ta.</p>
+        </div><!-- end b-feature-block -->
+      </div><!-- end columns -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section><!-- end best-features -->
+
+
+<!--========================= NEWSLETTER-1 ==========================-->
+<section id="newsletter-1" class="section-padding back-size newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <h2>ĐĂNG KÝ THÔNG TIN CỦA CHÚNG TÔI</h2>
+        <p>ĐĂNG KÝ ĐỂ NHẬN CÁC CẬP NHẬT QUAN TÂM CỦA CHÚNG TÔI</p>
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <input type="email" class="form-control input-lg" placeholder="Nhập email của bạn."
+                     required/>
+              <span class="input-group-btn"><button class="btn btn-lg"><i
+                class="fa fa-envelope"></i></button></span>
+            </div>
+          </div>
+        </form>
+      </div><!-- end columns -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section><!-- end newsletter-1 -->
