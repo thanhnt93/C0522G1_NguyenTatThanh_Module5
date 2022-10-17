@@ -6,7 +6,7 @@ function fibonacci(num: number): number {
 
 }
 
-let sum = 0;
+let sum: number = 0;
 for (let i = 0; i <= 20; i++) {
     console.log(fibonacci(i));
     sum = sum + fibonacci(i)
