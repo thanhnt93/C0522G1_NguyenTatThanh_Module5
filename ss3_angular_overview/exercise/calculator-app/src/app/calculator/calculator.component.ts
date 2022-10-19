@@ -7,9 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  number1 = 0;
-  number2 = 0;
-  results = 0;
+  number1: number;
+  number2: number;
+  results: number;
 
   constructor() {
   }
