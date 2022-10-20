@@ -1,0 +1,88 @@
+<form class="form" [formGroup]="createForm" style="padding-left: 600px ; margin-top: 50px">
+  <h2>From đăng ký</h2>
+  <label class="form-label">Email</label>
+  <input type="text" name="email" class="form-control" style="width: 400px" formControlName="email">
+  <p style="color: red" *ngIf="createForm.controls.email.hasError('required')&& createForm.dirty">
+    Không được để trống</p>
+  <p style="color: red" *ngIf="createForm.controls.email.hasError('email')">Nhập không đúng định dạng</p>
+
+  <div formGroupName="passwordGroup">
+    <label class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" style="width: 400px" formControlName="password">
+
+    <p style="color: red"
+       *ngIf="createForm.get('passwordGroup').hasError('required','password')&&
+      createForm.get('passwordGroup').get('password').dirty">
+      Nhập không
+      đúng định dạng</p>
+    <p style="color: red"
+       *ngIf="createForm.get('passwordGroup').hasError('minlength','password')&&
+          createForm.get('passwordGroup').get('password').dirty">
+      Nhập tối
+      thiểu 6 ký tự</p>
+
+
+    <label class="form-label">Confirm Password</label>
+    <input type="text" name="confirmPassword" class="form-control" style="width: 400px"
+           formControlName="confirmPassword">
+    <p style="color: red"
+       *ngIf="createForm.get('passwordGroup').hasError('required','confirmPassword')&&
+          createForm.get('passwordGroup').get('confirmPassword').dirty">
+      Pass
+      không được để trống</p>
+    <p style="color: red"
+       *ngIf="createForm.get('passwordGroup').hasError('minlength','confirmPassword')&&
+          createForm.get('passwordGroup').get('confirmPassword').dirty">
+      Nhập
+      tối thiểu 6 ký tự</p>
+    <p style="color: red"
+       *ngIf="createForm.get('passwordGroup').hasError('confirmPass','confirmPassword')&&
+          createForm.get('passwordGroup').get('confirmPassword').dirty">
+      Password
+      không khớp</p>
+  </div>
+
+  <label class="form-label">Country</label>
+  <select name="country" class="form-control" style="width: 400px" formControlName="country">
+    <option>Việt Nam</option>
+    <option>Campuchia</option>
+    <option>Thái Lan</option>
+    <option>Trung Quắc</option>
+  </select>
+  <p style="color: red" *ngIf="createForm.controls.country.hasError('required') && createForm.dirty">
+    Không được để trống
+  </p>
+
+  <label class="form-label">Age</label>
+  <input type="number" name="age" class="form-control" style="width: 400px" formControlName="age">
+  <p style="color: red" *ngIf="createForm.controls.age.hasError('required') && createForm.dirty">
+    Không được để trống
+  </p>
+  <p style="color: red" *ngIf="createForm.controls.age.hasError('min') && createForm.dirty">
+    Phải lớn hơn 18
+  </p>
+
+  <label class="form-label">Gender</label>
+  <div class="vc_empty_space" style="height: 5px">
+    <span class="vc_empty_space_inner"></span>
+  </div>
+  <input name="gender" type="radio" value="Nam" formControlName="gender"/>Nam
+  <input name="gender" type="radio" value="Nữ" formControlName="gender"/>Nữ
+  <input name="gender" type="radio" value="Khác" formControlName="gender"/>Khác
+  <p style="color: red" *ngIf="createForm.controls.gender.hasError('required') && createForm.dirty">
+    Không được để trống
+  </p>
+
+  <div class="vc_empty_space" style="height: 25px">
+    <span class="vc_empty_space_inner"></span>
+  </div>
+
+  <label class="form-label">Phone</label>
+  <input type="text" name="phone" class="form-control" style="width: 400px" formControlName="phone">
+  <p style="color: red" *ngIf="createForm.controls.phone.hasError('required') && createForm.touched">Không được để
+    trống</p>
+  <p style="color: red" *ngIf="createForm.controls.phone.hasError('pattern') && createForm.dirty">Không đúng định
+    dạng</p>
+  <br>
+  <button class="btn btn-primary" type="submit" (click)="getValueForm()">submit</button>
+</form>
