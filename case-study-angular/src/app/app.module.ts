@@ -14,6 +14,8 @@ import { EditCustomerComponent } from './edit-customer/edit-customer.component';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
 import { CreateContractComponent } from './create-contract/create-contract.component';
 import { ContractComponent } from './contract/contract.component';
+import { RoutingModule } from './routing.module';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ContractComponent } from './contract/contract.component';
     ContractComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
