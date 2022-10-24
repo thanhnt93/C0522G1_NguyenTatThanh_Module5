@@ -26,51 +26,86 @@
             <div class="custom-form custom-form-fields">
               <h3>Cập nhập thông tin</h3>
               <p>Vui lòng nhập đầy đủ thông tin phía dưới</p>
-              <form>
-
+              <form [formGroup]="formGroup">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Họ tên khách hàng" required/>
+                  <input type="text" class="form-control" formControlName="name" placeholder="Họ tên khách hàng"/>
                   <span><i class="fa fa-user"></i></span>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.name.hasError('required')&&formGroup.controls.name.touched">&nbsp;&nbsp;&nbsp;Tên
+                    không được để trống</p>
+                </div>
+
+
+                <div class="form-group">
+                  <input type="date" class="form-control" formControlName="birthday" placeholder="Ngày sinh"/>
+                  <span><i class="fa fa-envelope"></i></span>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.birthday.hasError('invalid18') &&formGroup.controls.birthday.touched">
+                    &nbsp;&nbsp;&nbsp;Tuổi không
+                    được dưới 18</p>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.birthday.hasError('required') &&formGroup.controls.birthday.touched">
+                    &nbsp;&nbsp;&nbsp;Ngày sinh
+                    không được để trống</p>
                 </div>
 
                 <div class="form-group">
-                  <input type="date" class="form-control" placeholder="Ngày sinh" required/>
+                  <input type="number" class="form-control" formControlName="idCard" placeholder="Số CMND/CCCD"/>
                   <span><i class="fa fa-envelope"></i></span>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.idCard.hasError('required')&&formGroup.controls.idCard.touched">
+                    &nbsp;&nbsp;&nbsp;Không được để trống</p>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.idCard.hasError('pattern')&&formGroup.controls.idCard.touched">
+                    &nbsp;&nbsp;&nbsp;Không đúng định dạng</p>
                 </div>
 
                 <div class="form-group">
-                  <input type="number" class="form-control" placeholder="Số CMND/CCCD" required/>
+                  <input type="number" class="form-control" formControlName="phone" placeholder="Số điện thoại"/>
                   <span><i class="fa fa-envelope"></i></span>
+                  <p style="color: red" *ngIf="formGroup.controls.phone.hasError('required')&&formGroup.controls.phone.touched">
+                    &nbsp;&nbsp;&nbsp;Không được để trống</p>
+                  <p style="color: red" *ngIf="formGroup.controls.phone.hasError('pattern')&&formGroup.controls.phone.touched">
+                    &nbsp;&nbsp;&nbsp;Không đúng định dạng</p>
                 </div>
 
                 <div class="form-group">
-                  <input type="number" class="form-control" placeholder="Số điện thoại" required/>
+                  <input type="email" class="form-control" formControlName="email" placeholder="Email"/>
                   <span><i class="fa fa-envelope"></i></span>
+                  <p style="color: red" *ngIf="formGroup.controls.email.hasError('required')&&formGroup.controls.email.touched">
+                    &nbsp;&nbsp;&nbsp;Không được để trống</p>
+                  <p style="color: red" *ngIf="formGroup.controls.email.hasError('email')&&formGroup.controls.email.touched">
+                    &nbsp;&nbsp;&nbsp;Không đúng định dạng</p>
                 </div>
 
                 <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email" required/>
+                  <input type="text" class="form-control" formControlName="customerType"
+                         placeholder="Loại khách ( Diamond, Member, Silver, ... )"/>
                   <span><i class="fa fa-envelope"></i></span>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.customerType.hasError('required')&&formGroup.controls.customerType.touched">&nbsp;&nbsp;&nbsp;Không
+                    được để trống</p>
                 </div>
 
                 <div class="form-group">
-                  <input type="text" class="form-control"
-                         placeholder="Loại khách ( Diamond, Member, Silver, ... )" required/>
+                  <input type="text" class="form-control" formControlName="address" placeholder="Địa chỉ"/>
                   <span><i class="fa fa-envelope"></i></span>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.address.hasError('required')&&formGroup.controls.address.touched">&nbsp;&nbsp;&nbsp;Không được để
+                    trống</p>
+                  <p style="color: red"
+                     *ngIf="formGroup.controls.address.hasError('pattern')&&formGroup.controls.address.touched">&nbsp;&nbsp;&nbsp;Không đúng định
+                    dạng</p>
                 </div>
 
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Địa chỉ" required/>
-                  <span><i class="fa fa-envelope"></i></span>
-                </div>
-
-                <button class="btn btn-orange btn-block">Lưu thay đổi</button>
+                <button class="btn btn-orange btn-block" [disabled]="formGroup.invalid">Lưu thay đổi</button>
               </form>
             </div><!-- end custom-form -->
 
             <div class="flex-content-img custom-form-img">
-              <img src="https://danangfantasticity.com/wp-content/uploads/2018/09/giai-thuong-jalpak-nhat-ban-ghi-nhan-furama-resort-danang-la-khach-san-duoc-yeu-thich-nhat-2017.jpg"
-                   class="img-responsive" alt="registration-img"/>
+              <img
+                src="https://danangfantasticity.com/wp-content/uploads/2018/09/giai-thuong-jalpak-nhat-ban-ghi-nhan-furama-resort-danang-la-khach-san-duoc-yeu-thich-nhat-2017.jpg"
+                class="img-responsive" alt="registration-img"/>
             </div><!-- end custom-form-img -->
           </div><!-- end form-content -->
 
@@ -125,25 +160,3 @@
   </div><!-- end container -->
 </section><!-- end best-features -->
 
-
-<!--========================= NEWSLETTER-1 ==========================-->
-<section id="newsletter-1" class="section-padding back-size newsletter">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-        <h2>ĐĂNG KÝ THÔNG TIN CỦA CHÚNG TÔI</h2>
-        <p>ĐĂNG KÝ ĐỂ NHẬN CÁC CẬP NHẬT QUAN TÂM CỦA CHÚNG TÔI</p>
-        <form>
-          <div class="form-group">
-            <div class="input-group">
-              <input type="email" class="form-control input-lg" placeholder="Nhập email của bạn."
-                     required/>
-              <span class="input-group-btn"><button class="btn btn-lg"><i
-                class="fa fa-envelope"></i></button></span>
-            </div>
-          </div>
-        </form>
-      </div><!-- end columns -->
-    </div><!-- end row -->
-  </div><!-- end container -->
-</section><!-- end newsletter-1 -->

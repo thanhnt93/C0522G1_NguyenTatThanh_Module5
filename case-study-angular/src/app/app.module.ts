@@ -16,6 +16,7 @@ import { CreateContractComponent } from './create-contract/create-contract.compo
 import { ContractComponent } from './contract/contract.component';
 import { RoutingModule } from './routing.module';
 import {RouterModule} from '@angular/router';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,11 +34,12 @@ import {RouterModule} from '@angular/router';
     CreateContractComponent,
     ContractComponent
   ],
-  imports: [
-    BrowserModule,
-    RoutingModule,
-    RouterModule
-  ],
+    imports: [
+        BrowserModule,
+        RoutingModule,
+        RouterModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
