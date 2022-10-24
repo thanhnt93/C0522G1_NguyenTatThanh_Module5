@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormControl, FormGroup, Validators} from '@angular/forms';
 import {CustomerService} from '../service/customer.service';
 import {Title} from '@angular/platform-browser';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-edit-customer',
@@ -12,7 +13,8 @@ export class EditCustomerComponent implements OnInit {
   formGroup: FormGroup;
 
   constructor(private customerService: CustomerService,
-              private titleService: Title) {
+              private titleService: Title,
+              private router: Router) {
   }
 
   ngOnInit(): void {

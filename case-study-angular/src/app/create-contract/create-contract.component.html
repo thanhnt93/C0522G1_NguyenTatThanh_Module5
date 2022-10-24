@@ -53,43 +53,76 @@
                   <div class="panel-body">
                     <div class="row">
                       <div class="col-sm-5 col-md-4 user-img">
-                        <img src="https://png.pngtree.com/element_our/20200609/ourlarge/pngtree-contract-signing-and-cooperation-image_2226053.jpg"
-                             class="img-responsive"
-                             alt="user-img"/>
+                        <img
+                          src="https://png.pngtree.com/element_our/20200609/ourlarge/pngtree-contract-signing-and-cooperation-image_2226053.jpg"
+                          class="img-responsive"
+                          alt="user-img"/>
                         <br>
-                        <img src="https://png.pngtree.com/png-vector/20190531/ourlarge/pngtree-agreementcontractdealdocumentpaper-flat-icon--green-and-png-image_1171877.jpg"
-                             class="img-responsive"
-                             alt="user-img"/>
+                        <img
+                          src="https://png.pngtree.com/png-vector/20190531/ourlarge/pngtree-agreementcontractdealdocumentpaper-flat-icon--green-and-png-image_1171877.jpg"
+                          class="img-responsive"
+                          alt="user-img"/>
                       </div><!-- end columns -->
 
                       <div class="col-sm-7 col-md-8  user-detail">
                         <div class="custom-form custom-form-fields">
                           <h3>Thêm thông tin hợp đồng</h3>
                           <p>Vui lòng nhập đầy đủ thông tin hợp đồng phía dưới</p>
-                          <form [formGroup]="">
+                          <form [formGroup]="contractFormGroup">
 
                             <div class="form-group">
                               <input type="text" class="form-control"
-                                     placeholder="Mã số hợp đồng" required/>
+                                     placeholder="Mã số hợp đồng"/>
                               <span><i class="fa fa-user"></i></span>
                             </div>
 
                             <div class="form-group">
-                              <input type="date" class="form-control"
-                                     placeholder="Ngày bắt đầu" required/>
-                              <span><i class="fa fa-envelope"></i></span>
+                              <input type="text" class="form-control"
+                                     placeholder="Tên dịch vụ" formControlName="facility"/>
+                              <span><i class="fa fa-user"></i></span>
+                            </div>
+                            <div class="alert alert-danger" role="alert"
+                                 *ngIf="contractFormGroup.controls.facility.hasError('required') &&
+                      contractFormGroup.controls.facility.touched">
+                              Vui lòng nhập dịch vụ!
                             </div>
 
                             <div class="form-group">
                               <input type="date" class="form-control"
-                                     placeholder="Ngày kết thúc" required/>
+                                     placeholder="Ngày bắt đầu" formControlName="startDate" [min]="curDate"/>
                               <span><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <div class="alert alert-danger" role="alert"
+                                 *ngIf="contractFormGroup.get('dateFormGroup').hasError('invalidStartDate', 'startDate')
+               && contractFormGroup.get('dateFormGroup').get('startDate').touched">
+                              Cái gì thuộc về quá khứ hãy cho nó qua đi!
+                            </div>
+
+                            <div class="form-group">
+                              <input type="date" class="form-control"
+                                     placeholder="Ngày kết thúc" formControlName="endDate" [min]="curDate"/>
+                              <span><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <div class="alert alert-danger" role="alert"
+                                 *ngIf="contractFormGroup.controls.dateFormGroup.hasError('invalidEndDate')
+           && contractFormGroup.controls.dateFormGroup.dirty">
+                              Ngày kết thúc hợp đồng không nhỏ hơn ngày làm hợp đồng!
                             </div>
 
                             <div class="form-group">
                               <input type="number" class="form-control"
-                                     placeholder="Số tiền cọc trước" required/>
+                                     placeholder="Số tiền cọc trước" formControlName="deposit"/>
                               <span><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <div class="alert alert-danger" role="alert"
+                                 *ngIf="contractFormGroup.controls.deposit.hasError('required') &&
+                      contractFormGroup.controls.deposit.touched">
+                              Tiền đặt cọc không được để trống!
+                            </div>
+                            <div class="alert alert-danger" role="alert"
+                                 *ngIf="contractFormGroup.controls.deposit.hasError('pattern') &&
+                      contractFormGroup.controls.deposit.touched">
+                              Tiền đặt cọc phải là số nguyên không nhỏ hơn 0!
                             </div>
 
                             <div class="form-group">
@@ -98,7 +131,7 @@
                               <span><i class="fa fa-envelope"></i></span>
                             </div>
 
-                            <button class="btn btn-orange btn-block">Thêm hợp đồng</button>
+                            <button class="btn btn-orange btn-block" [disabled]="contractFormGroup.invalid">Thêm hợp đồng</button>
                           </form>
                         </div><!-- end custom-form -->
                       </div><!-- end columns -->
