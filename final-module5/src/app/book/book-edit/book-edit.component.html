@@ -1,0 +1,61 @@
+<h1>Cập nhật thông tin sổ tiết kiệm</h1>
+<form [formGroup]="bookForm">
+  <table>
+    <tr>
+      <td>Mã số sổ:</td>
+      <td><input type="number" disabled formControlName="id_book"></td>
+    </tr>
+    <tr>
+      <td>Mã khách hàng:</td>
+      <td><input type="number" disabled formControlName="idCustomer"></td>
+    </tr>
+    <tr>
+      <td>Tên khách hàng:</td>
+      <td><input type="text" formControlName="name"></td>
+      <p *ngIf="bookForm.controls['name'].hasError('required')&& bookForm.touched">
+        Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Ngày mở sổ</td>
+      <td><input type="date" formControlName="date_start_book"></td>
+      <p *ngIf="bookForm.controls.date_start_book.hasError('required')&& bookForm.touched">
+        Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Thời gian bắt đầu gửi</td>
+      <td><input type="date" formControlName="start_date"></td>
+      <p *ngIf="bookForm.controls.start_date.hasError('required')&& bookForm.touched">
+        Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Kỳ hạn</td>
+      <td><input type="text" formControlName="period"></td>
+      <p *ngIf="bookForm.controls.period.hasError('required')&& bookForm.touched">
+        Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Số tiền gửi</td>
+      <td><input type="text" formControlName="deposits"></td>
+      <p *ngIf="bookForm.controls.deposits.hasError('required')&& bookForm.touched">
+        Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Lãi suất</td>
+      <td><input type="text" formControlName="interest"></td>
+      <p *ngIf="bookForm.controls.interest.hasError('required')&& bookForm.touched">
+        Không được để trống</p>
+    </tr>
+    <tr>
+      <td>Ưu đãi</td>
+      <td><input type="text" formControlName="description"></td>
+      <p *ngIf="bookForm.controls.description.hasError('required')&& bookForm.touched">
+        Không được để trống</p>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button type="submit" (click)="updateBook()" [disabled]="!bookForm.valid">Cập nhật</button>
+      </td>
+    </tr>
+  </table>
+</form>

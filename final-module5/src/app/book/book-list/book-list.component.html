@@ -1,0 +1,77 @@
+<div class="text-center"><h1>Danh sách sổ tiết kiệm</h1></div>
+<div class="row">
+  <div class="col-lg-9"></div>
+  <div class="d-flex my-2 col-lg-3" role="search">
+    <input class="form-control me-2" type="text" placeholder="Nhập tên.." aria-label="Search"
+           [(ngModel)]="bookNameSearch">
+    <button class="btn btn-light btn-outline-primary" (click)="searchByMore()">
+      search
+    </button>
+  </div>
+</div>
+<div *ngIf="book != null">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr class="bg-info text-center">
+      <th>Mã số sổ</th>
+      <th>Mã khách hàng</th>
+      <th>Tên khách hàng</th>
+      <th>Ngày mở sổ</th>
+      <th>Thời gian bắt đầu gửi</th>
+      <th>Kỳ hạn</th>
+      <th>Số tiền gửi</th>
+      <th>Lãi xuất</th>
+      <th>Ưu đãi</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of book; index as i">
+<!--      <td>{{i + 1}}</td>-->
+<!--      <td><a routerLink="/product/detail/{{product.id}}">{{product.name | titlecase}}</a></td>-->
+      <td class="text-center">{{book.id_book}}</td>
+      <td class="text-center">{{book.customer.idCustomer}}</td>
+      <td class="text-center">{{book.customer.name}}</td>
+      <td class="text-center">{{book.date_start_book}}</td>
+      <td class="text-center">{{book.start_date}}</td>
+      <td class="text-center">{{book.period}}</td>
+      <td>{{book.deposits | currency: ' '}} VNĐ</td>
+      <td class="text-center">{{book.interest}}</td>
+      <td class="text-center">{{book.description}}</td>
+      <td class="text-center"><a routerLink="/book/edit/{{book.id_book}}">
+        <button class="btn btn-success">
+          Edit
+        </button>
+      </a></td>
+      <td class="text-center">
+        <button data-bs-toggle="modal" data-bs-target="#deleteBook"
+                class="btn btn-danger"
+                (click)="getInfoBookDelete(book.customer.name, book.id_book)">
+          Delete
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="modal fade" id="deleteBook" tabindex="-1" aria-labelledby="exampleModalLabel1"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modalCSS">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel1">Bạn có chắc chắn muốn xóa?</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <span class="h6">Thông tin số sổ:</span><strong class="text-danger ps-2">{{bookNameDelete}}</strong>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        <button type="submit" class="btn btn-danger" data-bs-dismiss="modal" (click)="deleteBook()">Xóa</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+{
+  "customer": [
+    {
+      "idCustomer": 1,
+      "name": "Nguyen Tat Thanh"
+    },
+    {
+      "idCustomer": 2,
+      "name": "Nguyen Tan Huan"
+    },
+    {
+      "idCustomer": 3,
+      "name": "Ha Bao An"
+    },
+    {
+      "idCustomer": 4,
+      "name": "Nguyen Van Phu"
+    },
+    {
+      "idCustomer": 5,
+      "name": "Nguyen Duy Quyet"
+    }
+  ],
+  "book": [
+    {
+      "id_book": 1,
+      "customer": {
+        "idCustomer": 1,
+        "name": "Nguyen Tat Thanh"
+      },
+      "date_start_book": "20/10/2022",
+      "start_date": "20/10/2022",
+      "period": "1 thang",
+      "deposits": "50000",
+      "interest": "5%",
+      "description": "Ao mua"
+    },
+    {
+      "id_book": 2,
+      "customer": {
+        "idCustomer": 2,
+        "name": "Nguyen Tan Huan"
+      },
+      "date_start_book": "20/10/2022",
+      "start_date": "20/10/2022",
+      "period": "1 thang",
+      "deposits": "50000",
+      "interest": "5%",
+      "description": "Ao mua"
+    },
+    {
+      "id_book": 3,
+      "customer": {
+        "idCustomer": 2,
+        "name": "Nguyen Tan Huana"
+      },
+      "date_start_book": "20/10/2022",
+      "start_date": "20/10/2022",
+      "period": "1 thang",
+      "deposits": "50000",
+      "interest": "5%",
+      "description": "Ao mua"
+    },
+    {
+      "id_book": 4,
+      "customer": {
+        "idCustomer": 2,
+        "name": "Nguyen Tan Huana"
+      },
+      "date_start_book": "20/10/2022",
+      "start_date": "20/10/2022",
+      "period": "1 thang",
+      "deposits": "50000",
+      "interest": "5%",
+      "description": "Ao mua"
+    },
+    {
+      "id_book": 5,
+      "customer": {
+        "idCustomer": 2,
+        "name": "Nguyen Tan Huana"
+      },
+      "date_start_book": "20/10/2022",
+      "start_date": "20/10/2022",
+      "period": "1 thang",
+      "deposits": "50000",
+      "interest": "5%",
+      "description": "Ao mua"
+    },
+    {
+      "id_book": 6,
+      "customer": {
+        "idCustomer": 2,
+        "name": "Nguyen Van A"
+      },
+      "date_start_book": "20/10/2022",
+      "start_date": "20/10/2022",
+      "period": "1 thang",
+      "deposits": "50000",
+      "interest": "5%",
+      "description": "Ao mua"
+    }
+  ]
+}
